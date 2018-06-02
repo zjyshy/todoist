@@ -1,0 +1,413 @@
+body,html{
+    margin: 0;
+    padding: 0;
+height: 100%;
+background-color: #FAFAFA;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h5{
+    margin: 0;
+    padding-left:35px; 
+}
+h2{
+   margin-top: 0;
+}
+
+#todoist_app{
+
+    height: 100%;
+}
+h2>a{
+
+    font-weight: normal;
+    color: #333;
+    text-decoration: none;
+}
+
+h2>a:hover{
+
+    text-decoration: underline;
+}
+
+#page_background{
+height: 100%;
+    
+  
+}
+.items{
+  list-style: none;  
+}
+#app_holder{
+    height: 100%;
+    width: 265px;
+    margin-left: 100px;
+    max-width: 950px;
+}
+#top_bar{
+    background-color: #3d3d3d;
+    border-color: #414141;
+    height: 43px;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+}
+#top_bar_inner{
+    height: 100%;
+}
+#logo{
+    float: left;
+    padding-top: 8px;
+}
+
+.top_light_logo{
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -2544px;
+    height: 25px;
+    width: 25px;
+   
+}
+#top_icons{
+
+    float: right;
+   
+}
+#quick_find{
+    white-space: nowrap;
+    padding-top: 5px;
+}
+.img_search{
+
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1412px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 15;
+    margin-top: 9px;
+    margin-left: 8px;
+    cursor: text;
+    transition: opacity 0.1s ease-in;
+    
+}
+#list_holder{
+    width: 265px;
+}
+.projects_list_manager_action_history{
+    padding: 60px 0 40px 20px;
+}
+#projects_list {
+    margin-top: 10px;
+}
+#projects_list li{
+    padding: 6.5px 15px;
+}
+
+#projects_list span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 15px;
+
+}
+.collapse{
+
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in;
+}
+.expansion_panel:hover .collapse{
+  
+}
+.projects_list_manager_action{
+    padding-top:20px; 
+
+}
+.projects_list_manager_icon{
+
+    margin-left: 15px;
+    opacity: 1 !important;
+}
+
+.find_box{
+    box-sizing: border-box;
+    background: 0;
+    outline: none;
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left:30px; 
+    margin-top: 2px;
+    width: 206px;
+    transition: all 1s ease-in;
+}
+
+
+
+.find_box:hover{
+    background-color: #fff;
+    width:  100%;   
+}
+
+#left_menu{
+    height: 100%;
+    float: left;
+   
+  
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: #FAFAFA;
+    border-right: 1px solid #f1f1f1;
+}
+.left_menu_over{
+    overflow-y: hidden;
+}
+.left_menu_over:hover{
+    overflow-y: auto;
+}
+#top_filters0 .filter0{
+
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+}
+
+#top_filters1 .filter1{
+
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+
+}
+
+#top_filters2 .filter2{
+
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+
+}
+.date{
+    color: #999;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.filter {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 22px;
+    font-size: 14px;
+    color:#333;
+    cursor: pointer;
+    padding: 9px 16px 9px 4px;
+    background: #fafafa;
+    background-clip: padding-box;
+    transition:all .5s;
+
+   
+}
+
+
+
+.filter:hover{
+
+    background: #fff;
+  
+    
+ 
+   
+}
+.inbox{
+
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -2182px;
+    width: 20px;
+    height: 18px;
+  
+}
+.today{
+
+  background: url(../img/icon.png) 0 0 no-repeat; 
+     background-position: 0 -2042px;
+    width: 20px;
+    height: 18px;
+}
+
+.future{
+
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -2162px;
+    width: 20px;
+    height: 18px;
+}
+
+.top_icons_add_task{
+    height: 18px;
+    width: 18px;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1141px;
+}
+
+.top_icons_message{
+
+    height: 18px;
+    width: 18px;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1032px;
+}
+
+
+.top_icons_set{
+
+    height: 18px;
+    width: 18px;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1158px;
+}
+
+
+.expansion_panel{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.expansion_panel_content:hover{
+    background-color: #F7F7F7;
+}
+.panel_summary{
+    position: relative;
+    
+}
+
+.panel_summary_content{
+   padding-left: 40px; 
+   position: relative;
+   padding: 12.5px 0 12.5px 0;
+}
+.left_menu_over .panel_summary_content:hover{
+    background-color: #F1F1F1;
+}
+.left_menu .panel_summary_content:hover{
+    background-color: #F7F7F7;
+
+}
+
+
+.angle{
+    position: absolute; 
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -88px;
+    left: 9px;
+    margin-top: 5px;
+    transition: all .2s ease-out;   
+    z-index: 999; 
+}
+.angle_overturn{
+
+    transform:rotate(180deg);
+}
+.plus{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 25px;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1376px;
+  
+    top: calc(50% - 7px);
+}
+
+
+#main_content{
+height: 100%;
+margin-left: 284px;
+    background-color:#fff;
+    
+}
+#editor{
+    width: 596px;
+    padding: 80px 25px 12px 50px ;
+}
+.agenda_view_inbox_icon_vessel{
+    float: right;
+}
+.agenda_view_inbox_comment{
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -611px;
+    /*579px是深色*/
+    opacity: 1;
+    width: 15px;
+    height: 14px;
+    
+}
+
+.agenda_view_inbox_task_action{
+
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1250px;
+   opacity: .3;
+    width: 26px;
+    height: 16px;
+    margin-left: 20px;
+  
+}
+
+.all_add_task{
+    font-size: 14px;
+    color: #D6D6D6;
+    padding-left:3px; 
+
+}
+.all_add_task:hover{
+    text-decoration: underline;
+}
+.editor_plus{
+    height: 12px;
+    width: 12px;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: -2px -1378px;
+    opacity: .4;
+    margin-right:15px; 
+}
+.history{
+    height: 21px;
+    width: 25px;
+    float: right;
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -1878px;
+    opacity: .3;
+}
+
+.disappear{
+    display: none;
+}
+
+#agenda_view0 .agenda_view_inbox{
+
+    display: block;
+}
+#agenda_view1 .agenda_view_today{
+
+    display: block;
+}
+.tag_list_bare{
+
+padding: 20px;    
+margin: 0;
+}
+#tag_list_manager{
+
+  margin: 1px;
+}

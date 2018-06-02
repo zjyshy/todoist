@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/index.js"></script>
+    <script src="js/clickscript.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/sign.png">
+        <title>Todoist</title>
+</head>
+<body>
+
+    <div id="todoist_app">
+        <div id="page_background">
+        <div id="top_bar">
+                <div id="top_bar_inner">
+                    <div id="logo">
+                        <img src="img/holder.gif" class="top_light_logo">
+                    </div>
+                    <div id="top_icons">
+                        <span></span>
+                        <span><img src="img/holder.gif" class="top_icons_add_task"></span>
+                        <span></span>
+                        <span><img src="img/holder.gif" class="top_icons_message"></span>
+                        <span><img src="img/holder.gif" class="top_icons_set" ></span>
+                    </div>
+                    <div id="quick_find">
+                        <div>
+                            <img src="img/holder.gif" class="img_search">
+                            <input type="text" class="find_box" placeholder="快速查找">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+        <div id="app_holder">
+            <div id="notifier"></div>
+            <div id="left_menu" class="left_menu">
+                <div id="list_holder">
+                    <div>
+                        <ul id="top_filters1" class="items">
+                            <li class="filter filter0">
+                                <span class="item_icon">
+                                    <img src="img/holder.gif" class="inbox">
+                                </span>
+                                <span class="item_content">
+                                    <span>收件箱</span>
+                                </span>
+                            </li>
+                            <li class="filter filter1">
+                                <span class="item_icon">
+                                    <img src="img/holder.gif" class="today">
+                                </span>
+                                <span class="item_content"><span>今天</span></span>
+                            </li>
+                            <li class="filter filter2">
+                                <span class="item_icon"><img src="img/holder.gif" class="future" ></span>
+                                <span class="item_content"><span>未来七天</span></span>
+                            </li>
+                    </ul>
+                    </div>
+                    <div class="expansion_panel">
+                        <div class="panel_summary">
+                           
+                            <div class="panel_summary_content">
+                                    <img src="img/holder.gif" class='angle'>
+                                <h5>项目</h5>
+                                <img src="img/holder.gif" class="plus" >
+                        </div>
+                        <div class="collapse">
+                            <div class="collapse_wrapper">
+                                <div class="collapse_wrapper_inner">
+                                  
+                                    <ul id="projects_list">
+                                        <li><span></span>学习</li>
+                                        <li><span></span>Movies to watch</li>
+                                        <li><span></span>杂项</li>
+                                        <li><span></span>个人</li>
+                                        <li><span></span>工作</li>
+                                        <li><span></span>购物</li>
+                                    </ul>
+                                    <div id="projects_list_manager">
+                                        <div class="projects_list_manager_action">
+                                            <div><img src="img/holder.gif" class="editor_plus  projects_list_manager_icon">添加项目</div>
+
+                                            <div class="projects_list_manager_action_history">
+                                                <a href="#">已存档的项目</a>
+                                                <a href="#" style="display: none;">隐藏已存档的项目</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="expansion_panel">
+                    <div class="panel_summary">
+                       
+                        <div class="panel_summary_content">
+                                <img src="img/holder.gif" class='angle'>
+                            <h5>标签</h5>
+                            <img src="img/holder.gif" class="plus" >
+                    </div>
+                    <div class="collapse">
+                        <div class="collapse_wrapper">
+                            <div class="collapse_wrapper_inner">
+                                <ul id="tag_list"></ul>
+                                <div id="tag_list_manager">
+                                    <p class="tag_list_bare">您没有任何标签</p>
+                                    <div><img src="img/holder.gif" class="editor_plus  projects_list_manager_icon">添加标签</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="expansion_panel">
+                <div class="panel_summary">
+                   
+                    <div class="panel_summary_content">
+                            <img src="img/holder.gif" class='angle'>
+                        <h5>过滤器</h5>
+                        <img src="img/holder.gif" class="plus" >
+                </div>
+                <div class="collapse">
+                        <div class="collapse_wrapper">
+                                <div class="collapse_wrapper_inner">
+                                    <ul id="filter_list">
+                                        <li></li>
+                                    </ul>
+                                    <div id="filter_list_manager"></div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+                </div>
+            </div>
+            <div id="main_content">
+                <div id="editor">
+                    <div id="agenda_view1">
+                        <div class="agenda_view_inbox  disappear">
+                            <div class="agenda_list">
+                                <h2><a href="#">收件箱</a> <div class="agenda_view_inbox_icon_vessel"><img src="img/holder.gif" class="agenda_view_inbox_comment"><img src="img/holder.gif" class="agenda_view_inbox_task_action" ></div></h2>
+                            </div>
+                                <div class="inbox_add_task  all_add_task">
+                                    <img src="img/holder.gif" class="history">
+                                    <div class="inbox_add_item"><img src="img/holder.gif" class="editor_plus">添加任务</div>
+                                </div>
+                        </div>
+
+                        <div class="agenda_view_today disappear">
+                            <div>
+                                <h2>   <a href="#">今天</a>  <span class="date"> 1</span><img src="" alt=""></h2>
+                                <div class="today_add_task all_add_task">
+                                    <img src="img/holder.gif" class="editor_plus">添加任务</div>
+                                <div>
+                                    <img src="" alt="">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
