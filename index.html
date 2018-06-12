@@ -20,7 +20,7 @@
                         <img src="img/holder.gif" class="top_light_logo">
                     </div>
                     <div id="top_icons">
-                        <span></span>
+                        <span id="sync_state_icon"></span>
                         <span><img src="img/holder.gif" class="top_icons_add_task"></span>
                         <span></span>
                         <span><img src="img/holder.gif" class="top_icons_message"></span>
@@ -38,7 +38,7 @@
     
         <div id="app_holder">
             <div id="notifier"></div>
-            <div id="left_menu" class="left_menu">
+            <div id="left_menu" class="left_menu left_menu_over">
                 <div id="list_holder">
                     <div>
                         <ul id="top_filters1" class="items">
@@ -84,7 +84,7 @@
                                     </ul>
                                     <div id="projects_list_manager">
                                         <div class="projects_list_manager_action">
-                                            <div><img src="img/holder.gif" class="editor_plus  projects_list_manager_icon">添加项目</div>
+                                            <div class="cursor"><img src="img/holder.gif" class="editor_plus  projects_list_manager_icon">添加项目</div>
 
                                             <div class="projects_list_manager_action_history">
                                                 <a href="#">已存档的项目</a>
@@ -160,14 +160,24 @@
                         <div class="agenda_view_today disappear">
                             <div>
                                 <h2>   <a href="#">今天</a>  <span class="date"> 1</span><img src="" alt=""></h2>
+                                <ul id="today_task_list">
+                                   </ul>
                                 <div class="today_add_task all_add_task">
                                     <img src="img/holder.gif" class="editor_plus">添加任务</div>
-                                <div>
-                                    <img src="" alt="">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                               
+                                    
+                                    <div id="today_add_task_content">
+                                        <div>
+                                            <span class="contab" contenteditable="true"> </span><input placeholder="日程安排" class="today_add_task_date">                       
+                                        </div>   
+                                        <div class="today_add_task_button">
+                                            <button class="sub_add_task">添加任务</button>
+                                            <a href="#" class="today_add_task_return">取消</a>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    
+                                
 
                             </div>
 

@@ -3,6 +3,7 @@ body,html{
     padding: 0;
 height: 100%;
 background-color: #FAFAFA;
+overflow: hidden;
 }
 
 img {
@@ -21,10 +22,92 @@ h5{
 h2{
    margin-top: 0;
 }
+.move{
+    margin-left: -23px;
+    margin-bottom: -10px;
+    margin-top: 13px;
+    margin-right: 10px;
+    display: inline-block;
+    float: left;
+    opacity: 0;
+    cursor: move;
+    padding: 0 0 0 15px;
+    transition:all 1s ease-out;
+   
 
+}
+.float_menu{
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-size: 197px,3538px;
+    background-position: 0 -2062px;
+    width: 22px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+    visibility: hidden;
+
+}
+.move:hover{
+    opacity: 1;
+}
+.today_task_list_content{
+    position: relative;
+}
+.today_task_list_content >div{
+    width: 568px;
+    padding: 13px 0;
+    cursor: pointer;
+
+    margin: .1px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.today_task_list_content:hover .move{
+    opacity: .2;
+}
+.today_task_list_content:hover .today_task-talk{
+    opacity: .5;
+}
+.float_menu:hover{
+    opacity: 1;
+}
+.today_task_list_content:hover .float_menu {
+    visibility: visible;
+    opacity: .5;
+}
+
+.circle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #D6D6D6;
+   
+}
+.today_add_task_text{
+    display: inline-block;
+    padding: 1px 0 0 10px;
+}
+.today_task-talk{
+    background: url(../img/icon.png) 0 0 no-repeat;
+    background-position: 0 -611px;
+    width: 15px;
+    height: 14px;
+    opacity: 0;
+    float: right;
+    margin-left: 10px;
+   
+}
+
+.today_add_task_text_content{
+    font-size: 5px;
+    float: left;
+    line-height: 9px;
+}
 #todoist_app{
-
+    overflow: auto;
     height: 100%;
+    
 }
 h2>a{
 
@@ -37,7 +120,9 @@ h2>a:hover{
 
     text-decoration: underline;
 }
-
+.cursor{
+    cursor: pointer;
+}
 #page_background{
 height: 100%;
     
@@ -63,10 +148,13 @@ height: 100%;
 }
 #top_bar_inner{
     height: 100%;
+    max-width: 950px;
+
 }
 #logo{
     float: left;
     padding-top: 8px;
+    margin-left: 36px;
 }
 
 .top_light_logo{
@@ -79,11 +167,27 @@ height: 100%;
 #top_icons{
 
     float: right;
+  height: 100%;
+  
+ 
+
    
+}
+#top_icons>span{
+    height:100%;
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 12px 10px 0 10px;
 }
 #quick_find{
     white-space: nowrap;
     padding-top: 5px;
+    margin-left: 317px;
+   
+
 }
 .img_search{
 
@@ -102,6 +206,7 @@ height: 100%;
 }
 #list_holder{
     width: 265px;
+    padding-bottom: 50px;
 }
 .projects_list_manager_action_history{
     padding: 60px 0 40px 20px;
@@ -143,6 +248,7 @@ height: 100%;
 
 .find_box{
     box-sizing: border-box;
+    width: 300px;
     background: 0;
     outline: none;
     border: 1px solid transparent !important;
@@ -150,24 +256,26 @@ height: 100%;
     padding: 5px;
     padding-left:30px; 
     margin-top: 2px;
-    width: 206px;
-    transition: all 1s ease-in;
+    
+    transition: all .2s ease-in;
 }
+
 
 
 
 .find_box:hover{
-    background-color: #fff;
-    width:  100%;   
+    background-color: #555;
+    
 }
 
 #left_menu{
-    height: 100%;
+    height:calc(100% - 50px) ;
     float: left;
    
   
     padding-top: 50px;
     padding-left: 30px;
+
     background-color: #FAFAFA;
     border-right: 1px solid #f1f1f1;
 }
@@ -245,7 +353,67 @@ height: 100%;
     width: 20px;
     height: 18px;
 }
+#today_add_task_content{
+    display: none;
+   width: 100%; 
+    height: 35px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contab{
+    height: 21PX;
+    width: 80% ;
+   display: inline-block;
+  padding: 5px 6px;
+  margin-top: 2px;
+    border-right: 1px solid #ddd;
+   outline: none;
+}
+.today_add_task_date{
+    border: none;
+    outline: none;
+   width: 85px;
+    height: 21px;
+    padding: 3px 6px 0 6px;
+    opacity: .5;
 
+}
+
+.today_add_task_button{
+
+    padding: 10px 0;
+}
+.today_task_finish{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #999;
+    border-radius: 16px;
+    background-size: 16px 16px;
+   
+    opacity: .4;
+}
+.today_task_finish:hover{
+    background-image: url("https://d3ptyyxy2at9ui.cloudfront.net/c455c3d116265d1c0bd88fc3365c287e.svg");
+    background-color: #D6D6D6;
+}
+.today_indox{
+    font-size: 11px;
+    float: right;
+    color: #D6D6D6;
+}
+.sub_add_task{
+    padding: 6px 12px 7px 12px;
+     background-color: #333;
+     border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+
+}
 .future{
 
     background: url(../img/icon.png) 0 0 no-repeat;
@@ -289,12 +457,14 @@ height: 100%;
 .panel_summary{
     position: relative;
     
+    
 }
 
 .panel_summary_content{
    padding-left: 40px; 
    position: relative;
    padding: 12.5px 0 12.5px 0;
+   cursor: pointer;
 }
 .left_menu_over .panel_summary_content:hover{
     background-color: #F1F1F1;
@@ -304,7 +474,10 @@ height: 100%;
 
 }
 
+#projects_list>li{
+    cursor: pointer;
 
+}
 .angle{
     position: absolute; 
     background: url(../img/icon.png) 0 0 no-repeat;
@@ -333,12 +506,14 @@ height: 100%;
 #main_content{
 height: 100%;
 margin-left: 284px;
+width: 625px;
+padding: 0 20px;
     background-color:#fff;
     
 }
 #editor{
-    width: 596px;
-    padding: 80px 25px 12px 50px ;
+    
+    padding: 80px 25px 85px 30px ;
 }
 .agenda_view_inbox_icon_vessel{
     float: right;
@@ -368,10 +543,16 @@ margin-left: 284px;
     font-size: 14px;
     color: #D6D6D6;
     padding-left:3px; 
+    cursor: pointer;
 
 }
 .all_add_task:hover{
     text-decoration: underline;
+    color: #000;
+   
+}
+.all_add_task:hover .editor_plus{
+    opacity: 1;
 }
 .editor_plus{
     height: 12px;
