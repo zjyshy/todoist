@@ -183,7 +183,7 @@
 					
 					li.setAttribute("class","today_task_list_content today_task_list_content"+todayAddTaskFlag+"");
 					let L =	id("today_task_list").getElementsByClassName("today_task_list_content"+todayAddTaskFlag+"")[0];
-					alert(todayAddTaskFlag);
+					console.log(todayAddTaskFlag);
 					L.innerHTML = '<img class="move" src="https://d3ptyyxy2at9ui.cloudfront.net/065a2124d3d93a23b1701a9bbf7b4c8d.svg"> <div><span class=" today_task_finish today_task_finish'+todayAddTaskFlag+'"></span><span class="today_add_task_text"><span class = "today_add_task_text_content">'+CCN+'</span><img class="today_task-talk" src="img/holder.gif" alt=""></span><span class="today_indox">收件箱 <span class="circle"></span></span><span class="float_menu"></span></div>';
 					conTab[0].childNodes[0].nodeValue =" ";
 					taskFinish(todayAddTaskFlag);
@@ -201,7 +201,7 @@
 	function taskFinish(i){
 		var todayTF = document.getElementsByClassName("today_task_finish"+i+"")[0];
 		todayTF.addEventListener("click",function(){
-			alert(i);
+			console.log(i);
 			id("today_task_list").removeChild(document.getElementsByClassName("today_task_list_content"+i+"")[0]);
 		})
 	}
