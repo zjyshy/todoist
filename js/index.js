@@ -5,6 +5,7 @@
 	var html = document.getElementsByTagName("html");
 	var week = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
 	var da = new Date();
+	
 	var div = document.getElementsByTagName("div"); 
 	var findBox = document.getElementsByClassName("find_box");
 	var findImg = document.getElementsByClassName("img_search");
